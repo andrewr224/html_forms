@@ -1,7 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+	/* CSS reset */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -47,8 +44,131 @@ table {
 	border-spacing: 0;
 }
 
-/*
-==============================
-	Main Styles
-==============================
-*/
+
+	/* Custom Styles */
+
+body {
+	font-family: 'Lato', Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+section {
+	background-color: gold;
+	height: 921px;
+}
+
+a {
+	text-decoration: none;
+	color: #45cae6;
+}
+
+ /* Navigation */
+
+ .nav li {
+	display: inline-block;
+	border-left: 1px solid lightgray;
+ }
+
+ .nav li:first-child {
+ 	border-left: 0;
+ }
+
+.nav a {
+ color: #a5a5a5;
+}
+
+
+	/* Grid */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.group {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.col-left,
+.col-right  {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.col-left {
+	width: 400px;
+  float: left;
+}
+
+.col-right {
+	width: 225px;
+  float: right;
+}
+
+	/* Clearfix */
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+	/* Header */
+
+header {
+	height: 96px;
+	padding-top: 62px;
+	margin-bottom: 10px;
+}
+
+header img {
+	height: 37px;
+}
+
+header .nav {
+	text-align: right;
+	font-size: 15px;
+	margin-top: 18px;
+	letter-spacing: .6px;
+}
+
+header .nav li {
+	padding: 0 12px;
+}
+
+header .nav a {
+	color: #333;
+}
+
+header .nav li:first-child a {
+	font-weight: 700;
+}
+
+
+
+	/* Authorization Form */
+
+
+	/* Footer */
+
+footer {
+	height: 459px;
+	background-color: coral;
+	bottom: 0px;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+

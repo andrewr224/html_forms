@@ -3,8 +3,8 @@
 <head lang="en">
 	<meta charset="utf-8">
 	<title>HTML Sign Up Form</title>
-	<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/stylesheets/main.css">
+	<link rel="stylesheet" href="assets/stylesheets/font-awesome.css">
 </head>
 <body>
 	<!-- Header -->
@@ -38,7 +38,7 @@
 
 			<label>
 				Phone (recommended)
-				<input type="number" name="number">
+				<input type="tel" name="tel">
 				<small>Standard call, messaging or data rates may apply.</small>
 			</label>
 
@@ -53,26 +53,28 @@
 			</label>
 
 			<label>
-				<input type="checkbox" name="remember"> 
-Remember me
+				<input type="checkbox" name="remember">
+				<span>Remember me</span>
 			</label>
 
 			<button>
-				<span>Sign Up</span>
+				<span><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;&nbsp;Sign Up</span>
 			</button>
 
 		<p>By clicking Sign Up you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Statement</a></p>
 		</form>
 
 		<aside class="col-right">
-			<h1>Why you'll love it</h1>
+			<div class="side">
+				<h1>Why you'll love it</h1>
 
-			<ul>
-				<li>See all your accounts in one place</li>
-				<li>Set a budget and pay down your debt</li>
-				<li>Find the best ways to grow your money</li>
-				<li>Stay <a href="#">safe and secure</a></li>
-			</ul>
+				<ul>
+					<li>See all your accounts in one place</li>
+					<li>Set a budget and pay down your debt</li>
+					<li>Find the best ways to grow your money</li>
+					<li>Stay <a href="#">safe and secure</a></li>
+				</ul>
+			</div>
 		</aside>
 	</section>
   
